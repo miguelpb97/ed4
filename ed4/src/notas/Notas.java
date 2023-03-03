@@ -4,13 +4,21 @@ import java.util.Scanner;
 
 public class Notas {
 	public static void main(String[] args) {
-		cali();
+		califica();
+	}
+
+	/**
+	 * @deprecated Use {@link #califica()} instead
+	 * 
+	 */
+	public static void cali() {
+		califica();
 	}
 
 	/**
 	 * 
 	 */
-	public static void cali() {
+	public static void califica() {
 		Scanner reader = new Scanner(System.in);// Para pedir un dato numérico por teclado
 		int nota = 0;
 		String calificacion = "";
